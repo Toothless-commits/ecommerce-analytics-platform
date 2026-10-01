@@ -125,10 +125,7 @@ uv venv --python 3.12
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 uv pip install -r requirements.txt
 
-# 3. Copy environment configuration
-cp .env.example .env
-
-# 4. Launch Streamlit Dashboard
+# 3. Launch Streamlit Dashboard (zero-config, runs out-of-the-box)
 streamlit run app.py
 ```
 
@@ -297,7 +294,6 @@ pytest
 
 ```
 Data analyst/
-├── .env.example              # Environment variables template
 ├── .gitignore                # Git ignore rules
 ├── README.md                 # Complete system documentation
 ├── PORTFOLIO_SUMMARY.md      # Analytical case study & findings
